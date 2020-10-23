@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class ConditionerTest {
 
     @Test
-    public void shouldGetAndSet() {
+    public void shouldGetAndSet ( ) {
         Conditioner conditioner = new Conditioner();
         String expected = "Валли";
         assertNull(conditioner.getName());
@@ -17,7 +17,7 @@ class ConditionerTest {
     }
 
     @Test
-    void increaseCurrentTemperature() {
+    void increaseCurrentTemperature ( ) {
         Conditioner conditioner = new Conditioner();
         conditioner.setMaxTemperature(30);
         conditioner.setMinTemperature(5);
@@ -29,7 +29,7 @@ class ConditionerTest {
     }
 
     @Test
-    void decreaseCurrentTemperature() {
+    void decreaseCurrentTemperature ( ) {
         Conditioner conditioner = new Conditioner();
         conditioner.setMaxTemperature(30);
         conditioner.setMinTemperature(5);
@@ -41,7 +41,7 @@ class ConditionerTest {
     }
 
     @Test
-    public void decreaseCurrentTemperatureMin() {
+    public void decreaseCurrentTemperatureMin ( ) {
         Conditioner conditioner = new Conditioner();
         conditioner.setMaxTemperature(30);
         conditioner.setMinTemperature(5);
@@ -53,7 +53,7 @@ class ConditionerTest {
     }
 
     @Test
-    public void increaseCurrentTemperatureMax() {
+    public void increaseCurrentTemperatureMax ( ) {
         Conditioner conditioner = new Conditioner();
         conditioner.setMaxTemperature(30);
         conditioner.setMinTemperature(5);
@@ -65,7 +65,7 @@ class ConditionerTest {
     }
 
     @Test
-    public void minTemperature() {
+    public void minTemperature ( ) {
         Conditioner conditioner = new Conditioner();
         conditioner.setMinTemperature(5);
         int currentTemperature = 4;
@@ -75,7 +75,7 @@ class ConditionerTest {
     }
 
     @Test
-    public void maxTemperature() {
+    public void maxTemperature ( ) {
         Conditioner conditioner = new Conditioner();
         conditioner.setMaxTemperature(30);
         int currentTemperature = 31;
